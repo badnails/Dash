@@ -22,7 +22,7 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Dashboard",
-    path:"/"
+    path:"/dash"
   },
   {
     icon: UilClipboardAlt,

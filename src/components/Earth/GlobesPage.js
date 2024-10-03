@@ -7,9 +7,15 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Button, ButtonGroup } from "@mui/material";
 import { Link } from "react-router-dom";
 import imageCrolo from "./resources/co2.png";
-import imageTemp from "./resources/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png";
+import imgSeaTemp from "./resources/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png";
 import imageRad from "./resources/co2(1).png";
-
+import imgCarbonDi from "./resources/Carbon_Dioxide.png";
+import imgCarbonMo from "./resources/Carbon_Monoxide.png";
+import imgOzone from "./resources/Ozone.png";
+import imgWaterVpr from "./resources/Water_Vapour.png";
+import imgAirTemp from "./resources/Air_Temperature.png";
+import imgSulpurDi from "./resources/Sulpur_Dioxode.png";
+import imgMethane from "./resources/co.png"; //just for example
 
 function GlobesPage() {
   const [text, setText] = useState("ChloroPage");
@@ -17,17 +23,17 @@ function GlobesPage() {
   const renderText = () => {
     switch (text) {
       case "ChloroPage":
-        
+
       case "GlobeOceanTemperature":
-        
+
       case "GlobeAbsortion":
-        
+
       default:
         return null;
     }
   };
 
-  const [globeImageUrl, setGlobeImageUrl] = useState(imageCrolo);
+  const [globeImageUrl, setGlobeImageUrl] = useState(imgMethane);
 
   const changeImages = (newBackgroundImage, typeGlob) => {
     setGlobeImageUrl(newBackgroundImage);
@@ -59,31 +65,70 @@ function GlobesPage() {
         >
           <Button
             variant="contained"
-            onClick={() =>
-              changeImages(imageTemp, "GlobeOceanTemperature")
-            }
+            onClick={() => changeImages(imgCarbonDi, "GlobeOceanTemperature")}
           >
-            Water Temperature
+            Carbon Dioxide
           </Button>
           <Button
             variant="contained"
-            onClick={() => changeImages(imageCrolo, "ChloroPage")}
+            onClick={() => changeImages(imgSulpurDi, "ChloroPage")} //Not added yet.
           >
-            Chlorophyll Concentration
+            Sulfur Dioxide
           </Button>
           <Button
             variant="contained"
-            onClick={() =>
-              changeImages(imageRad, "GlobeAbsortion")
-            }
+            onClick={() => changeImages(imgOzone, "GlobeAbsortion")}
           >
-            Photosynthetically available radiation
+            Ozone
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => changeImages(imgMethane, "GlobeAbsortion")} //Not added yet properly. just for example
+          >
+            Methane
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => changeImages(imgWaterVpr, "GlobeAbsortion")}
+          >
+            Water Vapour
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => changeImages(imgSeaTemp, "GlobeAbsortion")}
+          >
+            Sea Surface Temperature
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => changeImages(imgAirTemp, "GlobeAbsortion")}
+          >
+            Air Temperature
           </Button>
           <ButtonGroup
             variant="contained"
             style={{ display: "flex", position: "relative", left: "0vh" }}
-          >
-          </ButtonGroup>
+          ></ButtonGroup>
+          <ButtonGroup
+            variant="contained"
+            style={{ display: "flex", position: "relative", left: "0vh" }}
+          ></ButtonGroup>
+          <ButtonGroup
+            variant="contained"
+            style={{ display: "flex", position: "relative", left: "0vh" }}
+          ></ButtonGroup>
+          <ButtonGroup
+            variant="contained"
+            style={{ display: "flex", position: "relative", left: "0vh" }}
+          ></ButtonGroup>
+          <ButtonGroup
+            variant="contained"
+            style={{ display: "flex", position: "relative", left: "0vh" }}
+          ></ButtonGroup>
+          <ButtonGroup
+            variant="contained"
+            style={{ display: "flex", position: "relative", left: "0vh" }}
+          ></ButtonGroup>
         </div>
       </div>
       <div className="globe-container">
