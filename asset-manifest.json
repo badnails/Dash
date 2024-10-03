@@ -1,19 +1,26 @@
 {
   "files": {
     "main.css": "/dash/static/css/main.be6059b9.css",
-    "main.js": "/dash/static/js/main.24500c32.js",
+    "main.js": "/dash/static/js/main.e3cb65fb.js",
     "static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png": "/dash/static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.91720b0edc136bdd88e1.png",
+    "static/media/co.png": "/dash/static/media/co.869f23d3e25a6900283e.png",
     "static/media/img3.png": "/dash/static/media/img3.6f23f5adfcb39e94935b.png",
+    "static/media/Carbon_Monoxide.png": "/dash/static/media/Carbon_Monoxide.3cb91d90e5f73352d6a2.png",
     "static/media/img2.png": "/dash/static/media/img2.d78c8070b65e58e877e4.png",
+    "static/media/Air_Temperature.png": "/dash/static/media/Air_Temperature.502ae498747b90db00d1.png",
+    "static/media/Sulpur_Dioxode.png": "/dash/static/media/Sulpur_Dioxode.d4524276568b9ee61cca.png",
+    "static/media/Ozone.png": "/dash/static/media/Ozone.7c251999f6dcc31f586f.png",
+    "static/media/Water_Vapour.png": "/dash/static/media/Water_Vapour.70604b73bacfa6273280.png",
+    "static/media/Carbon_Dioxide.png": "/dash/static/media/Carbon_Dioxide.2030b308c345293fefd5.png",
     "static/media/co2(1).png": "/dash/static/media/co2(1).a4c42a361ba9e2859d21.png",
     "static/media/co2.png": "/dash/static/media/co2.809d621a4330a6cc11e8.png",
     "static/media/405.png": "/dash/static/media/405.862c9171215a1452d15e.png",
     "index.html": "/dash/index.html",
     "main.be6059b9.css.map": "/dash/static/css/main.be6059b9.css.map",
-    "main.24500c32.js.map": "/dash/static/js/main.24500c32.js.map"
+    "main.e3cb65fb.js.map": "/dash/static/js/main.e3cb65fb.js.map"
   },
   "entrypoints": [
     "static/css/main.be6059b9.css",
-    "static/js/main.24500c32.js"
+    "static/js/main.e3cb65fb.js"
   ]
 }
